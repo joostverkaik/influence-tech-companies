@@ -3,7 +3,7 @@
 In this repository the progress of my thesis can be found.
 
 So far, I've made a notebook that reads the DBLP-CSR dataset from a MySQL database that I have imported in my local MySQL installation and constructs it into a Pandas DataFrame.
-In the notebook I focussed mainly on the affiliation table for now. The first thing that stood out was that the affiliation column only contains one affiliation per author. I need to find out if that's correct and if that will be an obstacle (which I presume is). If so, I need to check the other dataset DBLP-SIGWEB which is bigger.
+In the notebook I focussed mainly on the affiliation table for now. The first thing that stood out was that the affiliation column only contains one affiliation per author. I need to find out if that's correct and if that will be an obstacle (which I presume is). If so, I need to check the other dataset DBLP-SIGWEB which is smaller.
 
 From those affiliations I constructed a unique set of all affiliations. I need to find out which affiliations are from private companies and which are from universities. To do that, I found a dataset containing 9363 universities and colleges with the goal of matching the affiliations to that dataset. Unfortunately, the format in which the affiliations are listed deviates from the format from the universities dataset. I managed to remove certain special characters and hyphens, which makes it possible to match Universidad del Bio Bio to Universidad del Bío-Bío. I'm not exactly sure what the percentage of correctly matched universities is yet. I've seen occurrences where in Journals University of Montpellier is used, while the name in the dataset is Université de Montpellier. Thoughts?
 
